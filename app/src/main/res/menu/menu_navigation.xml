@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_current_trip"
+            android:checked="false"
+            android:icon="@drawable/ic_car_menu"
+            android:title="@string/current_trip" />
+
+        <item
+            android:id="@+id/nav_travel_histoy"
+            android:icon="@drawable/ic_truck_menu"
+            android:title="@string/travel_history" />
+
+        <item
+            android:id="@+id/nav_membership"
+            android:icon="@drawable/ic_membresia"
+            android:title="@string/membership" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_bell_notify"
+            android:title="@string/notifications" />
+
+        <item
+            android:id="@+id/nav_refeir"
+            android:icon="@drawable/ic_refer"
+            android:title="@string/refeir_friends"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_config"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/log_out" />
+
+    </group>
+</menu>

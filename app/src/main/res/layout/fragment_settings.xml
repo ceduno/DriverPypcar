@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewSetting"
+            type="com.protector.driverchile.settings.SettingView"
+            />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView0"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorDark"
+                    android:fontFamily="@font/helvetica_roman"
+                    android:gravity="center|left"
+                    android:paddingLeft="16dp"
+                    android:text="@string/account"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/txt_normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/viw_000"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView0"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_000"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.goToAccount()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_000">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_usernew"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/account"
+                        android:textSize="@dimen/txt_normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_001"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_000"
+                    tools:ignore="Orientation" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_001"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.goToChangePass()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_001">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_security"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/change_password"
+                        android:textSize="@dimen/txt_normal" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/viw_002"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_001"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_002"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.goToDisconnet()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_002">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_exit"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/disconnect"
+                        android:textSize="@dimen/txt_normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_003"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_002"
+                    tools:ignore="Orientation" />
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorDark"
+                    android:fontFamily="@font/helvetica_roman"
+                    android:gravity="center|left"
+                    android:paddingLeft="16dp"
+                    android:text="@string/preferences"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/txt_normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_003" />
+
+                <LinearLayout
+                    android:id="@+id/viw_004"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_0"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.changeStatusNotification()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_004">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_bell_notify"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/enable_notifications"
+                        android:textSize="@dimen/txt_normal" />
+
+                    <CheckBox
+                        android:id="@+id/swt_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:enabled="false"
+                        android:onClick="@{()->viewSetting.changeStatusNotification()}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_0"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_0"
+                    tools:ignore="Orientation" />
+                -
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_screen_on"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.changeStatusScreen()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_0">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_light"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/keep_screen_on"
+                        android:textSize="@dimen/txt_normal" />
+
+                    <CheckBox
+                        android:id="@+id/swt_screen_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:enabled="false"
+                        android:onClick="@{()->viewSetting.changeStatusNotification()}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_screen_on"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_travel_procar"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.changeStatusProCar()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/viw_1">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_car_menu"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/enable_travel_procar"
+                        android:textSize="@dimen/txt_normal" />
+
+                    <CheckBox
+                        android:id="@+id/swt_travel_procar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:enabled="false"
+                        android:onClick="@{()->viewSetting.changeStatusProCar()}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_theme"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.changeStatusTheme()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayout_travel_procar">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_car"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="Tema oscuro"
+                        android:textSize="@dimen/txt_normal" />
+
+                    <CheckBox
+                        android:id="@+id/swt_theme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:enabled="false"
+                        android:onClick="@{()->viewSetting.changeStatusTheme()}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_01"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_theme"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_03"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_01">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_pet"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/pro_pets"
+                        android:textSize="@dimen/txt_normal" />
+
+                    <Switch
+                        android:id="@+id/swt_pet"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_02"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_03"
+                    tools:ignore="Orientation" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorDark"
+                    android:fontFamily="@font/helvetica_roman"
+                    android:gravity="center|left"
+                    android:paddingLeft="16dp"
+                    android:text="@string/help"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/txt_normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_02" />
+
+                <LinearLayout
+                    android:id="@+id/viw_00"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.goToTechnicalSupport()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_00">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_call"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/technical_support"
+                        android:textSize="@dimen/txt_normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_2"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.goToAboutUs()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_info"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/about_us"
+                        android:textSize="@dimen/txt_normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_2"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_3"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.goToPrivacyPolicy()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_2">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:padding="13dp"
+                        android:src="@drawable/ic_paper"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/privacy_policy"
+                        android:textSize="@dimen/txt_normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_3"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_4"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dw_ripple"
+                    android:clickable="true"
+                    android:onClick="@{()->viewSetting.goToTermsConditions()}"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_3">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/dw_selector_setting_icon"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/ic_editpaper"
+                        app:tint="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dw_selector_setting"
+                        android:fontFamily="@font/helvetica_roman"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:text="@string/terms_conditions"
+                        android:textSize="@dimen/txt_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viw_4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLightGray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout_4"
+                    tools:ignore="Orientation" />
+
+                <LinearLayout
+                    android:id="@+id/viw_5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viw_4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/colorWhite"/>
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_car_menu"
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"
+        >
+    </item>
+</layer-list>

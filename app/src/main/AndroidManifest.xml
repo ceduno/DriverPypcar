@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.protector.driverchile">
+
+    <!-- PERMISOS INTERNET -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- PERMISOS UBICACION -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- LLAMADA DE TELEFONO -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- RECIBIR NOTIFIACIONES SOPORTE VERSIONES MENORES API 26-->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- VIBRACION -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- FOREGROUND SERVICE -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppThemeDark"
+        android:name=".ApplicationMaster">
+
+        <activity
+            android:name="com.protector.driverchile.splash.SplashView"
+            android:theme="@style/AppThemeBlack"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.protector.driverchile.loginMaster.LoginMasterView"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBlack"/>
+
+        <activity android:name="com.protector.driverchile.homeMaster.HomeMasterView"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity android:name="com.protector.driverchile.webMaster.WebMasterView"
+            android:screenOrientation="portrait"/>
+
+        <!-- SERVICES -->
+        <service
+            android:name="com.protector.driverchile.services.TrakingServices"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- FIREBASE -->
+
+        <service
+            android:name="com.protector.driverchile.firebase.FirebaseMessagin">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_app" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <!-- MAPS -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_maps" />
+        <!-- android:value="@string/api_maps"-->
+        <!-- Crashlytics -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="dd155fdbb49f0673cbfae66a12f80d59e146d01e" />
+    </application>
+</manifest>

@@ -1,0 +1,244 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="com.crashlytics.useFirebaseAppId" tools:ignore="ExtraTranslation">true</string>
+
+    <string name="app_name">PyPcar Driver</string>
+    <string name="default_notification_channel_id" translatable="false">default_notification_channel</string>
+    <string name="default_notification_channel_gps_id" translatable="false">default_notification_gps_channel</string>
+    <string name="api_maps" translatable="false">AIzaSyDwClVj45Dql7BghLwJYTTuEekFVYChiGM</string>
+<!--la que estaba AIzaSyB074uHXpmpnXqfG-P5hN3VtzGZW_X5j-M-->
+    <!-- GLOBAL -->
+    <string name="validating_version">Validando la Versión de la App</string>
+    <string name="validating_movil">Validando la versión del dispositivo</string>
+    <string name="validating_movil_fail">Debe tener Android 6.0 o superior en su dispositivo para poder utilizar esta aplicación</string>
+    <string name="buying_user_permis">Comprobando permisos del usuario</string>
+    <string name="without_internet">No tiene conexión a internet</string>
+    <string name="understood">Entendido</string>
+    <string name="information">Información</string>
+    <string name="ups">¡Ups!</string>
+    <string name="something_has_failed">Algo ha fallado, intentelo de nuevo.</string>
+    <string name="expired_session">Su sesión ha expirado</string>
+    <string name="loading_information">Cargando informacion...</string>
+    <string name="performing_operation">Realizando operación\nEspere un momento</string>
+    <string name="membership_operation">Consultando estatus de membresía</string>
+    <string name="improvements_message">Estamos realizando mejoras\nIngrese en par de minutos</string>
+    <string name="must_internet_connection">Debe tener activo el servicio de Datos o conexión a Interenet para utilizar la aplicación</string>
+    <string name="version_app">Versión de la App</string>
+    <string name="important_information">¡Información Importante!</string>
+    <string name="retry">Reintentar</string>
+    <string name="exit_app">Salir de la App</string>
+    <string name="invalid_version_app">Hay una nueva versión de la app disponible</string>
+    <string name="update_app">Actualizar App</string>
+    <string name="download">Descargar</string>
+    <string name="not_available">Por los momentos\nEsta opción no está disponible</string>
+    <string name="data_not_available">Datos no disponibles</string>
+    <string name="fail_view">¡Ups! algo ha fallado, vuelve a abrir la pantalla de </string>
+    <string name="current_trip_home">Esperando Viajes</string>
+    <string name="close">Cerrar</string>
+    <!-- LOGIN -->
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_password">¿Olvidó su contraseña?</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="new_user_register">Registrate</string>
+    <string name="loading">Cargando...</string>
+    <string name="invalid_email">Email invalido</string>
+    <string name="invalid_long_pass">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="fill_edit">Complete el campo</string>
+    <string name="invalid_credentials">Credenciales de ingreso invalidas</string>
+    <string name="account_no_driver">La cuanta con que desea ingresar no es de conductor, esta aplicación es unicamente para conductores.</string>
+    <string name="verification_email">Verificación del Email</string>
+    <string name="mesage_verification_email">La verifiación del email es obligatoria para acceder a la aplicación.\n\nPor favor, introduzca el codigo de verificación que recibira vía Email en</string>
+    <string name="resend_email">Reenviar Email</string>
+    <string name="resending">Reenviando...</string>
+    <string name="send">Enviar</string>
+    <string name="send_code">Enviar Codigo</string>
+    <string name="sending">Enviando...</string>
+    <string name="recover_password">Recuperar Contraseña</string>
+    <string name="mesage_recover_password">Por favor, ingrese su Email para recuperar la contraseña.</string>
+    <string name="check_email_password">Verifique su email para reiniciar su contraseña</string>
+    <string name="email_not_found">Email no encontrado</string>
+    <string name="code">Codigo</string>
+    <string name="code_send_succes">El código de verificación ha sido reenviado con éxito a su email.</string>
+    <string name="invalid_code">Código invalido</string>
+    <string name="registry">Registro</string>
+
+    <!-- REGISTER DRIVER -->
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="gender">Genero</string>
+    <string name="mobile">Móvil</string>
+    <string name="confirm_pass">Confirmar Contraseña</string>
+    <string name="recruiter_code">Código de Reclutador(a) o de Referido (Opcional)</string>
+    <string name="document_number">Número de Documento</string>
+    <string name="bout_us_meet">¿Cómo te\nenteraste de nosotros?</string>
+
+    <!-- MENU -->
+    <string name="current_trip">Viaje Actual</string>
+    <string name="travel_history">Historial de Viajes</string>
+    <string name="membership">Membresía</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="log_out">Desconectar</string>
+    <string name="settings">Ajustes</string>
+
+    <!--HOME-->
+    <string name="exit_message">Al cerrar sesión dejaras de estar disponible para recibir viajes.</string>
+    <string name="disconnecting">Desconectando...</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="disconnect_user">Has sido desconectado</string>
+
+    <!-- DIALGO PRIMERA> VEZ -->
+    <string name="hey">¡Hola!</string>
+    <string name="message_first_time">Bienvenido conductor, para estar activo y poder recibir viajes debes seguir los siguientes pasos:
+        \n\n
+        -Presione el boton On, Una vez se coloque en color verde estaras listo para comenzar a recibir viajes.
+    </string>
+
+    <string name="message_first_time_2">
+        - Tener el GPS activado, para poderle asiganar los pasajeros que esten más cercanos a tu ubicación.
+    </string>
+
+    <!--SETTING-->
+    <string name="account">Cuenta</string>
+    <string name="enable_notifications">Activar Notificaciones</string>
+    <string name="keep_screen_on">Mantener pantalla encendida</string>
+    <string name="enable_travel_procar">Activar Trabajos Procar</string>
+    <string name="pro_pets">Pro Mascotas</string>
+    <string name="change_password">Cambiar Contraseña</string>
+    <string name="help">Ayuda</string>
+    <string name="technical_support">Contacte a Apoyo Técnico</string>
+    <string name="about_us">Sobre Nosotros</string>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="preferences">Preferencias</string>
+    <string name="terms_conditions">Términos y Condiciones</string>
+    <string name="old_pass">Antigua Contraseña</string>
+    <string name="new_pass">Nueva Contraseña</string>
+    <string name="repeat_pass">Repetir Contraseña</string>
+    <string name="pass_no_equal">Las contraseña no son iguales</string>
+    <string name="password_changed_successfully">Constraseña cambiada con exito</string>
+    <string name="old_password_invalidates">Contraseña antigua invalida</string>
+    <string name="not_have_email_service">No tiene un servicio de envio de correo electrónico</string>
+    <string name="support_to">Soperte a</string>
+    <string name="change">Cambiar</string>
+    <string name="changin">Cambiando...</string>
+
+    <!-- PROFILE -->
+    <string name="full_name">Nombre Completo</string>
+    <string name="id_user">Id del Usuario</string>
+    <string name="phone">Teléfono</string>
+    <string name="address">dirección</string>
+    <string name="bank_name">Nombre del Banco</string>
+    <string name="routing_number">Numero de Cuenta</string>
+    <string name="bank_tipe">Tipo</string>
+    <string name="message_edit_profile">Para editar su perfil\ndebe comunicarse con Soporte</string>
+    <string name="car_model_name">Modelo</string>
+    <string name="car_make">Marca</string>
+    <string name="car_year">Año del carro</string>
+    <string name="car_plate_no">Placa del carro</string>
+    <string name="car_color">Color del carro</string>
+
+    <!-- TRAVEL HISTORY -->
+    <string name="name_of_the_passenger">Nombre del Pasajero</string>
+    <string name="number_of_passengers">Numero de Pasajeros</string>
+    <string name="date_Time">Fecha y Hora</string>
+    <string name="origin">Origen</string>
+    <string name="destination">Destino</string>
+    <string name="charges">Cargos</string>
+    <string name="payment_receipt_details">Detalles del Recibo de Pago</string>
+    <string name="cancel_trip">Cancelar Viaje</string>
+    <string name="status">Estado</string>
+    <string name="continue_trip">Continuar Viaje</string>
+    <string name="details_trip">Detalles de Viaje</string>
+    <string name="travel_request_date">Fecha de solicitud</string>
+    <string name="travel_id">ID del Viaje</string>
+    <string name="distance">Distancia</string>
+    <string name="wait_time">Tiempo de Espera</string>
+    <string name="duration">Duración</string>
+    <string name="estimated_duration">Duración estimada</string>
+    <string name="duration_info">La duracion sera igual al tiempo de espera más el tiempo del viaje</string>
+    <string name="rate_breakdown">Desglose de Tarifa</string>
+    <string name="rate">Tarifa</string>
+    <string name="percentage">Porcentaje</string>
+    <string name="participation">Participación</string>
+    <string name="tags">TAGS/Peaje</string>
+    <string name="total_income">Ingreso Total</string>
+    <string name="payment_method">Metodo de Pago</string>
+    <string name="travel_route">Ruta del Viaje</string>
+    <string name="getting_details_trip">Obteniendo los detalles del viaje</string>
+    <string name="getting_details_trip_fail">Algo ha fallado obteniendo la información del viaje,consulte nuevamente desde el Historial de Viajes</string>
+    <string name="not_have_any_trip_registry">No tiene ningun viaje en el registro.</string>
+
+    <!-- NOTIFICATION -->
+    <string name="not_have_any_notification">No tiene ninguna notificación</string>
+
+    <!-- TRAVEL -->
+    <string name="to_refuse">Rechazar</string>
+    <string name="to_accept">Aceptar</string>
+    <string name="passenger_details">Detalles del Pasajero</string>
+    <string name="qualification">Calificación</string>
+    <string name="input_security_code">Código</string>
+    <string name="security_code">Codigo de Seguridad</string>
+    <string name="arrived_wait">Llegue y Esperando</string>
+    <string name="end_trip">Finalizar Viaje</string>
+    <string name="trip_completed">Viaje finalizado!</string>
+    <string name="ending_trip">Finalizando Viaje</string>
+    <string name="message_trip_acept">Tienes una solicitud de viaje</string>
+    <string name="message_arrived_wait">Cuando llegues a la Direción Origen\nPresiona el boton Llegue y Esperando</string>
+    <string name="message_end_trip">Cuando llegues a la Direción Destino\nPresione el boton Finalizar Viaje</string>
+    <string name="message_security_code">Cuando se aproxime el pasajero\ndebes mostrar este código\nque debe coincidir con el que él te muestre</string>
+    <string name="message_no_gps">Es necesario que active el GPS\npara poder hacer seguimiento del viaje</string>
+    <string name="activate_gps">Activar GPS</string>
+    <string name="travel_status">Estado del Viaje:</string>
+    <string name="looking_passenger">Buscando a </string>
+    <string name="wait_pasanger">Esperando a </string>
+    <string name="taking_pasanger">Llevando a </string>
+    <string name="location_tracking_on">Seguimiento de ubicación Activado</string>
+    <string name="location_tracking">Seguimiento de ubicación</string>
+    <string name="cancel_trip_message">¿Estas seguro que quieres cancelar el viaje?</string>
+    <string name="canceling">Cancelando</string>
+    <string name="rechanging">Rechazando</string>
+    <string name="accepting">Aceptando</string>
+    <string name="expired_trip">Viaje expirado</string>
+    <string name="trip_assigned_another_driver">El viaje fue asignado a otro condutor</string>
+    <string name="start_trip">Comenzar Viaje</string>
+    <string name="starting">Comenzando</string>
+    <string name="message_start_trip">una vez el pasajero esté a bordo puede comenzar el viaje</string>
+    <string name="call_passenger">Llamar</string>
+    <string name="see_route">Ver ruta</string>
+    <string name="show_location">Mostrar ubicación</string>
+    <string name="distance_to_picupk">Distancia de recogida</string>
+    <string name="time_to_picupk">Tiempo de recogida</string>
+    <string name="assignment">Asignación</string>
+    <!-- RATE -->
+    <string name="qualify">Calificar</string>
+    <string name="qualifying">Calificando</string>
+    <string name="opinion_about_the_passenger">Su opinión sobre el pasajero.</string>
+    <string name="rate_message_passenger">Califica y danos tu opinión del pasajero</string>
+    <string name="rate_message_no_data">Debe ingresar por lo menos un comentario o calificación</string>
+    <string name="rate_successful">Calificación realizada</string>
+
+    <!-- REFEIR -->
+    <string name="refeir_friends">Referir Amigos</string>
+    <string name="code_to_refer_friends">Tu código para referir amigos es:</string>
+    <string name="refeir_friends_message">Debes indicar a tu referido(a) que ingrese éste código al momento de hacer su registro, para que puedan ganar fabulosos beneficios</string>
+    <string name="refeir_now">Referir Ahora</string>
+    <string name="refeir_message">Descarga la App Pinkcar &amp; Procar Chile y utiliza el siguiente código para obtener fabuloso beneficios:\n </string>
+    <string name="refeir_message_url_driver">Conductor:\n </string>
+    <string name="refeir_message_url_rider">Pasajero:\n </string>
+    <string name="fail_refeir_code">No posee Código de Referido ingrese nuevamente a la app o comuniquese con soporte</string>
+    <string name="trip_remaining">Viajes Restantes</string>
+    <string name="membership_validto">Valido Hasta</string>
+    <string name="remaining_days">Dias restantes</string>
+    <string name="payable">% de Pago</string>
+    <string name="tours_done">Viajes Realizados</string>
+    <string name="remaining_trips">Viajes Restantes</string>
+    <string name="remainig_days">Dias Restantes</string>
+    <string name="start_date">Fecha inicio</string>
+    <string name="ended_date">Fecha fin</string>
+    <string name="plan_amount">Monto del Plan</string>
+    <string name="payment_condition">Cond. de Pago</string>
+    <string name="exp_credit">Exp Credito</string>
+    <string name="no_trips">Aun no haz realizado viajes</string>
+    <string name="active_membership">Activa una Membresía</string>
+
+
+</resources>

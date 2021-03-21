@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeBlack" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryPink</item>
+    </style>
+
+    <style name="AppThemePro" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGrayDark</item>
+        <item name="colorPrimaryDark">@color/colorGrayDark</item>
+        <item name="colorAccent">@color/colorBlackDark</item>
+
+    </style>
+
+    <style name="AppThemePink" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--<style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorGray</item>
+        <item name="colorControlActivated">@color/colorYellow</item>
+    </style>-->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="custom_color_textView">@color/colorDark</item>
+        <item name="custom_color_background">@color/colorWhite</item>
+        <item name="custom_color_navbar">@color/colorPrimary</item>
+        <item name="custom_color_tint">@color/colorDark</item>
+        <item name="custom_col_textView_light">@color/distance_color</item>
+        <item name="custom_col_btn_green">@color/colorGreen</item>
+
+    </style>
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="custom_color_textView">@color/colorPrimary</item>
+        <item name="custom_color_background">@color/colorBlackDark</item>
+        <item name="custom_color_navbar">@color/colorDark</item>
+        <item name="custom_color_tint">@color/colorGray</item>
+        <item name="custom_col_textView_light">@color/colorPrimary</item>
+        <item name="custom_col_btn_green">@color/colorGreenDark</item>
+    </style>
+
+</resources>

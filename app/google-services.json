@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "1047161830940",
+    "firebase_url": "https://procar-pinkcar-chile-prod.firebaseio.com",
+    "project_id": "procar-pinkcar-chile-prod",
+    "storage_bucket": "procar-pinkcar-chile-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047161830940:android:6a8e0a7021f4133a",
+        "android_client_info": {
+          "package_name": "com.procarchile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047161830940-kk57mcc18pop1c2oj9totoujvhcehk9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.procarchile",
+            "certificate_hash": "8ac0c61f063b4e3cfbfacb7823a1b96363d4ac5c"
+          }
+        },
+        {
+          "client_id": "1047161830940-9g6b9d5ve5tlr30vpmruomdkacgbjde0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.procarchile",
+            "certificate_hash": "6b282411893ffc1856391bb1ed03dcf1b7c1a575"
+          }
+        },
+        {
+          "client_id": "1047161830940-92e3pc3f3nnv728o62gbvdmucrme5mc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.procarchile",
+            "certificate_hash": "6c07115c30f9702f59a597927fed57e13668edc1"
+          }
+        },
+        {
+          "client_id": "1047161830940-4fp9dnc4vkqu10qnm187lc23g94n71mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoN1P4W9PYYPGDIMh6z-lHRyzgU6WV4pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047161830940-4fp9dnc4vkqu10qnm187lc23g94n71mi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047161830940-0baugfasunhantrah2vk677d8ubrroel.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.protector.ProcarChile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047161830940:android:0fedd46dd0ad18c4",
+        "android_client_info": {
+          "package_name": "com.protector.driverchile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047161830940-4fp9dnc4vkqu10qnm187lc23g94n71mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoN1P4W9PYYPGDIMh6z-lHRyzgU6WV4pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047161830940-4fp9dnc4vkqu10qnm187lc23g94n71mi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047161830940-0baugfasunhantrah2vk677d8ubrroel.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.protector.ProcarChile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

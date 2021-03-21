@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout2">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.protector.driverchile.login.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <ImageView
+            android:id="@+id/imgv_login"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_driver"
+            app:layout_constraintBottom_toTopOf="@id/layout_flag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.47" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_login"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline1">
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/dw_edit_text_white"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="@={viewmodel.user}"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/txt_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_email"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_email"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="24dp"
+                android:background="@drawable/dw_imagen_login"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_mail"
+                app:tint="@color/colorGray"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edit_email" />
+
+            <EditText
+                android:id="@+id/edit_pass"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/dw_edit_text_white"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="@={viewmodel.pass}"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/txt_normal"
+                app:layout_constraintEnd_toStartOf="@id/img_eye"
+                app:layout_constraintStart_toEndOf="@id/img_password"
+                app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+            <ImageView
+                android:id="@+id/img_eye"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="30dp"
+                android:onClick="@{()->viewmodel.showPass()}"
+                android:padding="5dp"
+                android:src="@drawable/ic_eye"
+                app:tint="@color/colorGrayDark"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_pass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/edit_pass"
+                app:layout_constraintTop_toTopOf="@+id/edit_pass" />
+
+            <ImageView
+                android:id="@+id/img_password"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="24dp"
+
+                android:background="@drawable/dw_imagen_login"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_password"
+                app:tint="@color/colorGray"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_pass"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edit_pass" />
+
+
+            <TextView
+                android:id="@+id/txv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:onClick="@{()->viewmodel.forgotPass()}"
+                android:text="@string/forgot_password"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="@dimen/txt_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_registry" />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/colorGreenBtn"
+                android:onClick="@{()->viewmodel.doLogin()}"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_pass" />
+
+            <Button
+                android:id="@+id/btn_registry"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/colorGrayDark"
+                android:onClick="@{()->viewmodel.doRegistry()}"
+                android:text="@string/registry"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_flag"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dw_combo_country"
+            app:layout_constraintBottom_toTopOf="@id/guideline1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgv_login">
+
+            <ImageView
+                android:id="@+id/iv_flag_country"
+                android:layout_width="36dp"
+                android:layout_height="31dp"
+                android:layout_margin="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/flag120"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txv_country_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:text="CHI"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_flag_country"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

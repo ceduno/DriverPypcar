@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorPrimary" format="reference"/>
+    <attr name="colorPrimaryDark" format="reference"/>
+    <attr name="colorAccent" format="reference" />
+    <attr name="tint" format="reference" />
+
+    <attr name="custom_color_textView" format="color" />
+    <attr name="custom_color_background" format="color" />
+    <attr name="custom_color_navbar" format="color" />
+    <attr name="custom_color_tint" format="color" />
+    <attr name="custom_color_item" format="color" />
+    <attr name="custom_col_textView_light" format="color" />
+    <attr name="custom_col_btn_green" format="color" />
+
+</resources>

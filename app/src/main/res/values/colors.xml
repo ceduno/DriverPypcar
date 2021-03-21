@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bbbbbb</color>
+    <color name="colorPrimaryDark">#AAAAAA</color>
+    <color name="colorPrimaryDarkOld">#26589c</color>
+    <color name="colorPrimaryPink">#f8567e</color>
+    <color name="colorPrimaryDarkPink">#f72d5b</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlueDark">#213c90</color>
+    <color name="colorBlueLight">#7fc4d6</color>
+    <color name="colorGrayDark">#383838</color>
+    <color name="colorBlackDark">#010116</color>
+    <color name="colorLightGray">#A6FAFAFA</color>
+    <color name="colorGray">#bbbbbb</color>
+    <color name="colorGrayWhite">#E7E6E6</color>
+    <color name="colorYellow">#ffc600</color>
+    <color name="colorRed">#ff1717</color>
+    <color name="colorDarkRed">#B71C1C</color>
+    <color name="colorGreen">#00c413</color>
+    <color name="colorGreenBtn">#219338</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorEmpy">#00FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackShadow">#471D1D1D</color>
+
+    <color name="colorPrimaryText">#333232</color>
+    <color name="status_bar_color">#4C4C4C</color>
+    <color name="colorDark">#242221</color>
+    <color name="distance_color">#93949f</color>
+    <color name="colorGreenDark">#0F441A</color>
+</resources>

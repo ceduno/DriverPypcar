@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.protector.driverchile.dialog.DialogTripWaiting"
+            />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/viewArrivedTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+
+                <LinearLayout
+                    android:id="@+id/layout_swipes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/tv_descripMaps">
+
+                    <ProgressBar
+                        android:id="@+id/progressBarStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone" />
+
+                    <com.terry.view.swipeanimationbutton.SwipeAnimationButton
+                        android:id="@+id/swipe_btn_control_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:visibility="gone"
+                        app:duration="200" />
+
+                    <com.terry.view.swipeanimationbutton.SwipeAnimationButton
+                        android:id="@+id/swipe_btn_control_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:visibility="gone"
+                        app:duration="200" />
+
+                    <com.terry.view.swipeanimationbutton.SwipeAnimationButton
+                        android:id="@+id/swipe_btn_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:visibility="visible"
+                        app:duration="200" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="Cancelar"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout19"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_swipes" />
+
+                <TextView
+                    android:id="@+id/txv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:text="Llegue"
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@id/linearLayout19"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_swipes" />
+
+                <ImageButton
+                    android:id="@+id/btn_maps"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/colorEmpy"
+                    android:onClick="@{()->viewModel.showRouteDestinationMaps()}"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_ruta"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_descripMaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helvetica_roman"
+                    android:text="Ver Ruta"
+                    android:textSize="@dimen/txt_small"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_maps"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_maps"
+                    app:layout_constraintStart_toStartOf="@+id/btn_maps" />
+
+                <ImageButton
+                    android:id="@+id/btn_call"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorEmpy"
+                    android:onClick="@{()->viewModel.callPassanger()}"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_phone"
+                    android:tint="@color/colorPrimaryDark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_message"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/colorEmpy"
+                    android:onClick="@{()->viewModel.callPassanger()}"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_chat"
+                    android:tint="@color/colorPrimaryDark"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_maps"
+                    app:layout_constraintStart_toEndOf="@+id/btn_call"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helvetica_roman"
+                    android:text="@string/call_passenger"
+                    android:textSize="@dimen/txt_small"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_call"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_call"
+                    app:layout_constraintStart_toStartOf="@+id/btn_call" />
+
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="@dimen/txt_small"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_message"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_message"
+                    app:layout_constraintStart_toStartOf="@+id/btn_message" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout19"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txv_right"></LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>
